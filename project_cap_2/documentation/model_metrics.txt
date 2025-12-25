@@ -1,0 +1,15 @@
+Model Metrics
+Linear Regression:
+MAE: 254.73
+RMSE: 495.08
+R2: 0.4328
+
+Random Forest:
+MAE: 346.80
+RMSE: 594.90
+R2: 0.1811
+
+Gradient Boosting:
+MAE: 300.15
+RMSE: 541.82
+R2: 0.3207
