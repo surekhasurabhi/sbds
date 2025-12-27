@@ -4,7 +4,7 @@ import plotly.express as px
 import joblib
 
 # -------------------------------
-# Page config (must be first Streamlit call)
+# Page config 
 # -------------------------------
 st.set_page_config(
     page_title="U.S. Rent Forecast Dashboard",
@@ -18,7 +18,7 @@ df = pd.read_csv("zillow_rent_cleaned.csv")
 model = joblib.load("linreg_rent_model.pkl")
 
 # -------------------------------
-# Date handling (CRITICAL FIX)
+# Date handling 
 # -------------------------------
 df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 df["Year"] = df["Date"].dt.year
